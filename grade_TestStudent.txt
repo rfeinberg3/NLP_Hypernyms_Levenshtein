@@ -1,0 +1,52 @@
+==============================
+TESTING ON INPUT PROBLEM:
+(['dogs', 'cats', 'mammals', 'living things'], "All mammals, such as dogs and cats, eat to survive. Mammals are living things, aren't they?")
+CORRECT OUTPUT:
+{('mammals', 'dogs'), ('mammals', 'cats'), ('living things', 'mammals')}
+YOUR OUTPUT:
+{('living things', 'mammals'), ('mammals', 'dogs'), ('mammals', 'cats')}
+Correct!
+==============================
+TESTING ON INPUT PROBLEM:
+(['animals', 'dogs', 'cats'], 'Some animals, including cats, are considered. But it is NOT true that dogs are animals; I refuse to accept it.')
+CORRECT OUTPUT:
+{('animals', 'dogs'), ('animals', 'cats')}
+YOUR OUTPUT:
+{('animals', 'dogs'), ('animals', 'cats')}
+Correct!
+==============================
+TESTING ON INPUT PROBLEM:
+(['hemingway', 'bibliophile', 'author', 'william faulkner', 'mark twain'], 'Hemingway was an author of many classics. But also, Hemingway was a bibliophile, having read the works of every other famous American author, such as William Faulkner and Mark Twain.')
+CORRECT OUTPUT:
+{('bibliophile', 'hemingway'), ('author', 'mark twain'), ('author', 'william faulkner'), ('author', 'hemingway')}
+YOUR OUTPUT:
+{('bibliophile', 'hemingway'), ('author', 'mark twain'), ('author', 'william faulkner'), ('author', 'hemingway')}
+Correct!
+==============================
+TESTING ON INPUT PROBLEM:
+('abc', 'abbc')
+CORRECT OUTPUT:
+1
+YOUR OUTPUT:
+1
+Correct!
+==============================
+TESTING ON INPUT PROBLEM:
+('rjkl;34lkj 34 .!@#\n', 'xjkl;34lK j 34 .!@#\n\t')
+CORRECT OUTPUT:
+6
+YOUR OUTPUT:
+6
+Correct!
+==============================
+TESTING ON INPUT PROBLEM:
+("Don't let your dreams be dreams\nYesterday you said tomorrow\nSo just do it\nMake your dreams come true\nJust do it", "Some people dream of success\nWhile you're gonna wake up and work hard at it\nNothing is impossible")
+CORRECT OUTPUT:
+126
+YOUR OUTPUT:
+126
+Correct!
+==============================
+==============================
+==============================
+FINAL SCORE:100

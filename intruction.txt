@@ -1,0 +1,27 @@
+Must work in Python 3.8+ without any special libraries (besides those that are in all
+default Python installations, e.g. sys, os, re, etc.), unless listed below
+• Submit a file hw1.py with no outputting code (print or any similar statements) at any
+level. This file should contain the top-level functions:
+– problem1(NPs, S), where:
+• NPs: A list of strings [np1, np2, ...] where each string is a lowercase noun phrase. You may assume that no
+noun phrase in this list is a substring of another.
+• S: A string which contains arbitrary text and symbols.
+• Using regular expressions, find all hypernyms in S which link only noun phrases in NPs. Use only the Hearst
+patterns in the previous slide.
+– Noun phrases may appear capitalized in S.
+– Noun phrases in NP will not have the indefinite article (a, an), but it may appear in the string S. In such cases, extract the
+hypernym relationship. For example, if “dog” and “mammal” appear in NP, but S contains ‘a dog is a mammal’, then
+extract (‘mammal’, ‘dog’).
+• Return: A set() containing each hypernym as a tuple of strings (x,y), where x is a hypernym of y in S, and both
+x and y appear exactly as they appeared in NPs.
+– problem2(s1, s2), where:
+• s1, s2: Two strings
+• Return: a single integer which is the Levenshtein edit distance from s1 to s2. You may not use any libraries that
+implement the edit distance algorithm for you (you may use them for testing your code, but remove them
+from the submitted version). Plagiarized code will receive an instant ‘0’.
+• Comment your code clearly
+• ANY issues harming automation may result in a grade of ‘0’. RIGOROUSLY TEST YOUR
+CODE. Use the example grader provided on Canvas.
+• All code written must be your own and not copied from elsewhere.
+• This is an easy assignment. But start early just in case. A simple problem can easily lead
+to a ‘0’.
